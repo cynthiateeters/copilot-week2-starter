@@ -33,7 +33,6 @@ By completing this assignment, you will be able to:
 - Edit JSON files manually
 - Run npm scripts from the terminal
 - Create documentation with Agent's help
-- Modify Copilot context files
 
 ## The big picture
 
@@ -254,7 +253,7 @@ Commit `package.json` (with your new scripts) and push to GitHub.
 
 ## Part 4: Experiment with cowsay
 
-**Goal:** Try cowsay's features and document what you learn.
+**Goal:** Try cowsay's features and add a custom script.
 
 ### Reference doc available
 
@@ -296,20 +295,6 @@ Example combining flags:
 npm run cowsay -- -f tux -e "**" "Excited penguin!"
 ```
 
-### Create your tutorial doc: tutorial-cowsay.md
-
-Document what you learned about cowsay.
-
-**Suggested Prompt For Agent:**
-
-```text
-Create a file called docs/tutorial-cowsay.md that documents cowsay based on my experiments. Include:
-- Basic usage
-- The -f flag for choosing creatures
-- 2-3 other flags I tried
-- Examples with my favorite creature
-```
-
 ### Add a custom script
 
 Add a new line inside your `"scripts"` section in `package.json` for your favorite creature and message:
@@ -322,14 +307,9 @@ Test it with `npm run favorite`.
 
 ### CPR checkpoint
 
-Commit these files:
-
-- `package.json` (with your favorite script)
-- `docs/tutorial-cowsay.md`
+Commit `package.json` (with your favorite script) and push to GitHub.
 
 **Remember the comma rule!** When adding your `favorite` script, add a comma after the `moo` line.
-
-Push to GitHub.
 
 ---
 
@@ -385,51 +365,7 @@ Commit `README.md` and push. Check your repo on GitHub.com—the README should d
 
 ---
 
-## Part 6: Modify Copilot context
-
-**Goal:** Change how Copilot behaves by editing its instructions file.
-
-### Open the instructions file
-
-Open `.github/copilot-instructions.md` and read what's there.
-
-**Note:** The `.github` folder starts with a dot, which makes it hidden on some systems. In VS Code, you should see it in the Explorer sidebar. If you don't, use **File > Open File** and navigate to `.github/copilot-instructions.md` directly.
-
-### Add your own instruction
-
-Add at least one new instruction. Examples:
-
-- "When explaining npm commands, always show the full command first, then explain each part"
-- "Include a 'Common mistakes' section in any tutorial you write"
-- "Always suggest a CPR checkpoint after completing a major step"
-
-### Test your instruction
-
-Ask Agent to do something that would trigger your rule. For example, if you added the "Common mistakes" instruction, try this prompt:
-
-```text
-Create a short tutorial about running npm scripts
-```
-
-Then check: Did Copilot include a "Common mistakes" section? If not, try making your instruction more specific.
-
-### Document what happened
-
-Note whether Copilot followed your instruction in your reflection later. If it didn't work, that's still useful information—you learned something about how AI context works.
-
-**Before committing, verify:**
-
-- [ ] You added at least one instruction
-- [ ] You tested it with a prompt
-- [ ] You noted whether it worked (for your reflection)
-
-### CPR checkpoint
-
-Commit `.github/copilot-instructions.md` and push.
-
----
-
-## Part 7: Write your reflection
+## Part 6: Write your reflection
 
 **Goal:** Complete your AI collaboration summary.
 
@@ -442,8 +378,7 @@ Read [ai-as-communication-tool.md](ai-as-communication-tool.md) if you haven't a
 Look at:
 
 - Your SpecStory history (`.specstory/history/`)—this folder contains your conversation logs. If you don't see it, that's okay; you can also scroll through your Copilot Chat panel history instead.
-- The 2 tutorial docs you created with Agent
-- Your modified `copilot-instructions.md`
+- The tutorial doc you created with Agent
 - Your README
 
 ### Complete the template
@@ -468,8 +403,7 @@ Submit to Canvas:
 1. **GitHub repository link** containing:
    - Working npm project with cowsay installed
    - Your custom scripts in package.json
-   - 2 student-created tutorial docs in docs/
-   - Modified copilot-instructions.md
+   - Your tutorial doc (docs/tutorial-package-json.md)
    - README with cowsay output in code fence
 
 2. **AI collaboration summary** (committed to your repo)
@@ -486,10 +420,8 @@ Use [CHECKLIST.md](CHECKLIST.md) to verify everything before submitting.
 | -------------------------------------- | ---------------------------------------- |
 | `package.json`                         | Agent (Part 1), then you edited (Part 3) |
 | `docs/tutorial-package-json.md`        | You with Agent (Part 2)                  |
-| `docs/tutorial-cowsay.md`              | You with Agent (Part 4)                  |
 | `README.md`                            | You (Part 5)                             |
-| `.github/copilot-instructions.md`      | Modified by you (Part 6)                 |
-| `ai-collaboration-summary-template.md` | Filled out by you (Part 7)               |
+| `ai-collaboration-summary-template.md` | Filled out by you (Part 6)               |
 
 ### Troubleshooting
 
@@ -500,7 +432,6 @@ Use [CHECKLIST.md](CHECKLIST.md) to verify everything before submitting.
 | Cowsay doesn't run                   | Make sure you're in the project folder. Run `npm install` again                                                                                                                                                                                                            |
 | npm can't find package.json          | You're in the wrong folder. Make sure your terminal is in the project folder (you should see package.json in the file explorer).                                                                                                                                           |
 | Agent won't create files             | Make sure you're in Agent mode, not Ask mode                                                                                                                                                                                                                               |
-| Can't find .github folder            | This folder is hidden (starts with a dot). Use File > Open File to navigate to it directly                                                                                                                                                                                 |
 | Push fails with authentication error | VS Code will prompt you to sign in to GitHub. Follow the prompts. If that doesn't work, ask your instructor for help with git credentials.                                                                                                                                 |
 | Cowsay hangs after running           | You may have forgotten the `--` before your flags/message. Press Ctrl+C to cancel, then try again with `npm run cowsay -- "your message"`                                                                                                                                  |
 
