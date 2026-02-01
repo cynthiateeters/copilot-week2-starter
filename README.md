@@ -68,7 +68,7 @@ Complete these tasks using Copilot Agent mode:
 ### 3. Modify the context
 
 - Open `.github/copilot-instructions.md`
-- Add a new instruction (e.g., "Always add a comment before console.log to help with debugging")
+- Add a new instruction (e.g., "Start all alert messages with 'Hey! '" or "Add a console.log when each function runs")
 - Save the file
 - Ask Agent to add another feature
 - Observe: Does Copilot follow your new instruction?
@@ -120,6 +120,7 @@ Agent mode will write HTML, CSS, and JavaScript for you. Before you dive in, rea
 | `docs/writing-prompts-for-agent.md`      | How to write effective prompts           |
 | `docs/when-agent-makes-mistakes.md`      | Handling errors and debugging with Agent |
 | `docs/understanding-agent-workflow.md`   | What happens when Agent processes a task |
+| `docs/about-javascript-alerts.md`        | Why we use alerts for learning           |
 
 ## How to view your page
 
