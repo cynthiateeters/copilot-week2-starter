@@ -116,6 +116,7 @@ Agent mode will write HTML, CSS, and JavaScript for you. Before you dive in, rea
 | `.vscode/extensions.json`                | Recommended extensions                   |
 | `ai-collaboration-summary-template.md`   | Template for your reflection             |
 | `docs/working-with-ai-generated-code.md` | Guide to learning from AI-generated code |
+| `docs/copilot-slash-commands.md`         | Tutorial on /explain, /fix, and more     |
 
 ## How to view your page
 
