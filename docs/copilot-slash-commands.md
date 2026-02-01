@@ -14,38 +14,41 @@ Slash commands are shortcuts that tell Copilot Chat exactly what kind of help yo
 
 ### /explain
 
-**What it does:** Explains selected code in plain language.
+**What it does:** Explains selected code or content in plain language.
 
-**When to use it:** After Agent creates JavaScript code you don't understand.
+**When to use it:** After Agent creates files or runs commands you don't understand.
 
 **How to use it:**
 
-1. Select code in the editor (highlight it with your mouse or keyboard)
+1. Select content in the editor (highlight it with your mouse or keyboard)
 2. Open Copilot Chat
 3. Type `/explain`
 4. Press Enter
 
 **Example:**
 
-You select this code that Agent created:
+You select the contents of `package.json` that Agent created:
 
-```javascript
-button.addEventListener("click", function () {
-  console.log("Button was clicked!");
-  alert("Hello!");
-});
+```json
+{
+  "name": "my-project",
+  "version": "1.0.0",
+  "dependencies": {
+    "cowsay": "^1.6.0"
+  }
+}
 ```
 
 You type: `/explain`
 
-Copilot responds with a line-by-line breakdown of what the code does. Even if Agent used syntax you don't recognize (like `() =>` instead of `function()`), `/explain` will help you understand it.
+Copilot responds with a breakdown of what each field means and why it matters.
 
 **Pro tip:** Add context to get better explanations:
 
 - `/explain` — Basic explanation
 - `/explain what does this do?` — Same thing, slightly more conversational
 - `/explain I'm a beginner, explain simply` — Asks for simpler language
-- `/explain what is addEventListener?` — Focuses on a specific part
+- `/explain what does the ^ mean in the version?` — Focuses on a specific part
 
 ---
 
@@ -63,9 +66,9 @@ Copilot responds with a line-by-line breakdown of what the code does. Even if Ag
 
 **Example scenario:**
 
-Your button doesn't work. You select the JavaScript and type `/fix`. Copilot might notice you misspelled `querySelector` or forgot a closing parenthesis.
+Your npm script doesn't run. You select the scripts section in `package.json` and type `/fix`. Copilot might notice you have a missing comma or mismatched quotes.
 
-**Note:** You'll use `/fix` more in Week 3. For now, if Agent's code doesn't work, you can ask Agent to fix it directly: "The button doesn't work. Can you fix it?"
+**Note:** You'll use `/fix` more in Week 3. For now, if something doesn't work, you can ask Agent to fix it directly: "The npm script doesn't run. Can you fix it?"
 
 ---
 
@@ -113,29 +116,29 @@ You select a function and type `/doc`. Copilot adds a comment block above it exp
 
 These are different tools that work together:
 
-| Tool           | What it does                                 | When to use                        |
-| -------------- | -------------------------------------------- | ---------------------------------- |
-| Agent mode     | Takes actions, edits files, creates features | "Add a button that counts clicks"  |
-| Slash commands | Specific operations on selected code         | "Explain this code I'm looking at" |
+| Tool           | What it does                                | When to use                         |
+| -------------- | ------------------------------------------- | ----------------------------------- |
+| Agent mode     | Takes actions, runs commands, creates files | "Initialize npm and install cowsay" |
+| Slash commands | Specific operations on selected content     | "Explain this package.json file"    |
 
 **Typical workflow:**
 
-1. Use **Agent** to create a feature
+1. Use **Agent** to set up your project
 2. Use **/explain** to understand what Agent created
 3. Use **/fix** if something isn't working
-4. Use **Agent** again to add more features
+4. Use **Agent** again to create documentation
 
 ## Week 2 focus: /explain
 
 For this assignment, `/explain` is your most important slash command. The workflow is:
 
-1. **Agent creates code** — You ask Agent to add a button or other feature
-2. **You select the JavaScript** — Highlight the code Agent added to `script.js`
+1. **Agent runs commands** — You ask Agent to initialize npm and install packages
+2. **You select content** — Highlight package.json or terminal output
 3. **You use /explain** — Type `/explain` in Copilot Chat
 4. **You read and understand** — Read Copilot's explanation
-5. **You ask follow-up questions** — "What does `const` mean?" or "Why use an arrow function?"
+5. **You ask follow-up questions** — "What does dependencies mean?" or "Why is there a ^ in the version?"
 
-This cycle—generate, explain, understand—is how you turn AI-generated code into knowledge.
+This cycle—generate, explain, understand—is how you turn AI-generated content into knowledge.
 
 ## Common questions
 

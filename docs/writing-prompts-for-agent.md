@@ -6,11 +6,11 @@ Getting good results from Copilot Agent starts with how you ask. This guide show
 
 Agent works best when you tell it exactly what you want. Compare these prompts:
 
-| Vague prompt          | Specific prompt                                                     |
-| --------------------- | ------------------------------------------------------------------- |
-| "Add a button"        | "Add a button that shows an alert saying 'Hello!' when clicked"     |
-| "Make it look better" | "Make the button blue with white text and rounded corners"          |
-| "Add some JavaScript" | "Add a counter that increases by 1 each time the button is clicked" |
+| Vague prompt        | Specific prompt                                                                           |
+| ------------------- | ----------------------------------------------------------------------------------------- |
+| "Set up npm"        | "Configure npm with my name (Jane Smith) and email (jane@example.com), then run npm init" |
+| "Install something" | "Install cowsay as a dependency"                                                          |
+| "Make a script"     | "Add an npm script called 'moo' that runs 'cowsay Hello!'"                                |
 
 The specific prompts give Agent clear direction. The vague prompts leave Agent guessing—and it might guess wrong.
 
@@ -18,117 +18,117 @@ The specific prompts give Agent clear direction. The vague prompts leave Agent g
 
 A helpful prompt often includes:
 
-1. **What** you want (the feature or change)
-2. **Where** it should go (if not obvious)
-3. **How** it should behave (the details)
+1. **What** you want (the action or result)
+2. **Details** that matter (names, values, options)
+3. **Context** if needed (why you want it)
 
 **Example:**
 
-> "Add a text input field above the button. When the user types their name and clicks the button, show an alert that says 'Hello, [name]!'"
+> "Configure npm with my author information: Name is 'Your Name', email is 'your@email.com', and license should be MIT. Then initialize a new project with npm init."
 
 This prompt tells Agent:
 
-- **What**: A text input field and modified button behavior
-- **Where**: Above the button
-- **How**: Combines the input value with a greeting in an alert
+- **What**: Configure npm and initialize
+- **Details**: Specific name, email, and license
+- **Context**: It's for a new project
 
 ## Start simple, then refine
 
 You don't need to describe everything in one prompt. It's often better to:
 
 1. Start with a basic request
-2. See what Agent creates
+2. See what Agent does
 3. Ask for adjustments
 
 **Example conversation:**
 
-> **You:** "Add a button that counts clicks"
+> **You:** "Initialize npm and install cowsay"
 >
-> **Agent:** _Creates a button with a counter_
+> **Agent:** _Runs npm init and npm install cowsay_
 >
-> **You:** "Show the count on the page instead of in an alert"
+> **You:** "Add a script called 'moo' that runs cowsay with a greeting"
 >
-> **Agent:** _Modifies to display count in a paragraph_
+> **Agent:** _Adds the script to package.json_
 >
-> **You:** "Add a reset button that sets the count back to zero"
+> **You:** "Change the greeting to say 'Hello from npm!'"
 >
-> **Agent:** _Adds a second button_
+> **Agent:** _Updates the script_
 
 This iterative approach is how professionals work with AI tools. You don't need to think of everything upfront.
 
 ## Prompts for common Week 2 tasks
 
-### Adding interactive elements
+### Setting up npm
 
 ```text
-Add a button with the text "Click me" that shows an alert saying "Hello!" when clicked.
+Configure npm with my author information: Name is "Your Name", email is "your@email.com", license is MIT.
 ```
 
 ```text
-Add a text input field where users can type their name.
+Initialize a new npm project with default values.
 ```
 
 ```text
-Add a counter that displays on the page and increases each time a button is clicked.
+Install cowsay as a dependency.
 ```
 
-### Styling elements
+### Working with scripts
 
 ```text
-Make the button blue with white text.
-```
-
-```text
-Add some spacing between the button and the paragraph above it.
+Add an npm script called "cowsay" that runs the cowsay command.
 ```
 
 ```text
-Center all the content on the page.
-```
-
-### Connecting elements
-
-```text
-When the user types in the input field and clicks the button, display what they typed below the button.
+Add a script called "moo" that runs cowsay with the message "Hello World".
 ```
 
 ```text
-Add a second button that resets the counter to zero.
+Add a script that uses the tux character to say "Linux rules!".
+```
+
+### Creating documentation
+
+```text
+Create a file called docs/tutorial-package-json.md that explains each field in my package.json for a beginner.
 ```
 
 ```text
-Make the heading change color when the button is clicked.
+Create a reference file listing my favorite cowsay creatures with example commands.
+```
+
+```text
+Add a troubleshooting section to the README with common npm errors.
 ```
 
 ## What to avoid
 
 ### Too vague
 
-> "Make it work"
+> "Set it up"
 
-Agent doesn't know what "it" is or what "work" means to you.
+Agent doesn't know what "it" refers to or what setup means to you.
 
 ### Too complex all at once
 
-> "Create a full shopping cart with product images, quantities, prices, a total calculator, discount codes, and checkout functionality"
+> "Configure npm with my info, initialize the project, install cowsay and prettier, add scripts for both, create documentation for everything, and update the README with examples"
 
 This is too much for one prompt. Break it into smaller pieces.
 
-### Assuming Agent knows your intent
+### Assuming Agent knows your preferences
 
-> "Fix the thing"
+> "Use the usual settings"
 
-Agent doesn't know what's broken or what you expected to happen.
+Agent doesn't know what's "usual" for you.
 
-**Better:** "The button doesn't show an alert when I click it. Can you check the JavaScript and fix the issue?"
+**Better:** "Configure npm with name 'Jane Smith', email 'jane@example.com', license MIT"
 
 ## When Agent asks questions
 
 Sometimes Agent will ask for clarification:
 
-> "Do you want the counter to start at 0 or 1?"
-> "Should the alert include the user's name?"
-> "Where would you like me to place the new button?"
+> "What name should I use for the npm author?"
+> "Should I install cowsay as a regular dependency or devDependency?"
+> "What message do you want the cow to say?"
 
 This is good! Answer the questions, and Agent will have a better understanding of what you want.
 
@@ -138,11 +138,11 @@ When something isn't working, describe:
 
 1. **What you expected** to happen
 2. **What actually happened** (or didn't happen)
-3. **When** it happens (on click, on page load, etc.)
+3. **Any error messages** you saw
 
 **Example:**
 
-> "When I click the button, nothing happens. I expected to see an alert with my name, but the page just sits there."
+> "When I run 'npm run moo', I get an error saying 'cowsay is not recognized'. I expected to see a cow saying hello."
 
 This gives Agent the information it needs to diagnose the problem.
 
@@ -151,8 +151,8 @@ This gives Agent the information it needs to diagnose the problem.
 Working with Agent is a conversation, not a one-shot request. The pattern is:
 
 1. **Prompt** → Ask for something
-2. **Review** → Look at what Agent created
-3. **Refine** → Ask for adjustments or move to the next feature
+2. **Review** → Look at what Agent did
+3. **Refine** → Ask for adjustments or move to the next task
 4. **Repeat**
 
 Each cycle teaches you more about how to communicate with AI tools effectively.
@@ -161,16 +161,16 @@ Each cycle teaches you more about how to communicate with AI tools effectively.
 
 Try these prompts with Agent and see what happens:
 
-1. "Add a button that changes color each time it's clicked"
-2. "Create a simple form with a name field and a submit button"
-3. "Add a paragraph that shows the current date and time"
-4. "Make the page background change to a random color when a button is clicked"
+1. "Show me my current npm configuration"
+2. "Add a script that lists all available cowsay creatures"
+3. "Create a docs file explaining how npm scripts work"
+4. "Update the cowsay script to use the dragon character"
 
-After each one, use `/explain` to understand the JavaScript Agent created.
+After each one, use `/explain` if you don't understand what Agent did.
 
 ## Summary
 
-- Be specific about what you want, where, and how
+- Be specific about what you want and include relevant details
 - Start simple and refine through conversation
 - Describe problems clearly: expected vs. actual behavior
 - Answer Agent's questions to help it understand your intent
