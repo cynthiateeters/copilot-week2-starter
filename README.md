@@ -68,7 +68,7 @@ Complete these tasks using Copilot Agent mode:
 ### 3. Modify the context
 
 - Open `.github/copilot-instructions.md`
-- Add a new instruction (e.g., "Always use arrow functions" or "Add console.log for debugging")
+- Add a new instruction (e.g., "Always add a comment before console.log to help with debugging")
 - Save the file
 - Ask Agent to add another feature
 - Observe: Does Copilot follow your new instruction?
