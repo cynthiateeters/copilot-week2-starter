@@ -124,10 +124,10 @@ Show me my current npm configuration using npm config list.
 Install prettier as a dev dependency.
 ```
 
-### Create a script
+### Explain terminal output
 
 ```text
-Add an npm script called "moo" that runs "cowsay 'Hello!'"
+What does this npm output mean? Is it an error or just a warning?
 ```
 
 ## After Agent finishes

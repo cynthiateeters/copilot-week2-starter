@@ -62,23 +62,15 @@ Review your chat history with Agent (in SpecStory's `.specstory/history/` folder
 
 ## Documentation you created
 
-List the docs you created with Agent's help. For each, briefly explain what's in it.
+List the 2 tutorial docs you created with Agent's help. Briefly explain what's in each one.
 
 ### docs/tutorial-package-json.md
 
 [1-2 sentences about what this file explains]
 
-### docs/reference-npm-commands.md
-
-[1-2 sentences about what commands you documented]
-
 ### docs/tutorial-cowsay.md
 
 [1-2 sentences about what cowsay features you documented]
-
-### docs/reference-cowsay-creatures.md
-
-[1-2 sentences about which creatures you included and why you chose them]
 
 ---
 

@@ -244,37 +244,21 @@ Add these scripts:
 
 You should see a cow saying "Hello from npm scripts!"
 
-### Create your second doc: reference-npm-commands.md
-
-As you learn npm commands, document them for future reference.
-
-**Suggested Prompt For Agent:**
-
-```text
-Create a file called docs/reference-npm-commands.md as a personal cheat sheet. Include the npm commands I've used so far:
-- npm config set
-- npm config list
-- npm init
-- npm install
-- npm run
-
-For each command, show the syntax and a brief explanation.
-```
+**Tip:** Need a quick reference for npm commands? Check out [reference-npm-commands.md](reference-npm-commands.md).
 
 ### CPR checkpoint
 
-Commit these files:
-
-- `package.json` (with your new scripts)
-- `docs/reference-npm-commands.md`
-
-Push to GitHub.
+Commit `package.json` (with your new scripts) and push to GitHub.
 
 ---
 
 ## Part 4: Experiment with cowsay
 
-**Goal:** Explore cowsay's features and document what you discover.
+**Goal:** Try cowsay's features and document what you learn.
+
+### Reference doc available
+
+Check out [reference-cowsay-creatures.md](reference-cowsay-creatures.md) for a list of fun creatures and flags to try.
 
 ### Run cowsay with a message
 
@@ -286,25 +270,19 @@ npm run cowsay -- "Hello World"
 
 **Note:** The `--` tells npm to pass everything after it to the cowsay command.
 
-### See available creatures
+### Pick a favorite creature
+
+Browse the reference doc or run `npm run cowsay -- -l` to see all available creatures. Pick ONE favorite to use for the rest of this part.
+
+Try your chosen creature:
 
 ```bash
-npm run cowsay -- -l
+npm run cowsay -- -f tux "Your message here"
 ```
 
-This lists all available "cowfiles" (ASCII art creatures). That's a lot of creatures! Don't try them all—scroll through, pick 5-6 that sound interesting, and experiment with those.
+### Try 2-3 flags
 
-### Try different creatures
-
-The `-f` flag lets you choose a creature:
-
-```bash
-npm run cowsay -- -f tux "Linux rules!"
-npm run cowsay -- -f dragon "I am fire"
-npm run cowsay -- -f stegosaurus "Rawr"
-```
-
-### Try other flags
+Experiment with a couple of these flags on your favorite creature:
 
 | Flag | What it does             | Example   |
 | ---- | ------------------------ | --------- |
@@ -312,16 +290,13 @@ npm run cowsay -- -f stegosaurus "Rawr"
 | `-T` | Change tongue characters | `-T "U "` |
 | `-W` | Set column width         | `-W 40`   |
 
-### Tutorial vs. reference
+Example combining flags:
 
-You'll create two types of documentation in this section:
+```bash
+npm run cowsay -- -f tux -e "**" "Excited penguin!"
+```
 
-- **Tutorial**: Explains HOW to use something step by step. Good for learning.
-- **Reference**: Quick lookup for specific information. Good for "I forgot the flag name."
-
-Think of a tutorial as a recipe you follow, and a reference as an index you search.
-
-### Create your third doc: tutorial-cowsay.md
+### Create your tutorial doc: tutorial-cowsay.md
 
 Document what you learned about cowsay.
 
@@ -330,20 +305,9 @@ Document what you learned about cowsay.
 ```text
 Create a file called docs/tutorial-cowsay.md that documents cowsay based on my experiments. Include:
 - Basic usage
-- The -f flag for different creatures
-- The -l flag to list creatures
-- Other flags I tried (-e, -T, -W)
-- A few examples with actual commands
-```
-
-### Create your fourth doc: reference-cowsay-creatures.md
-
-Pick your favorite creatures and document them.
-
-**Suggested Prompt For Agent:**
-
-```text
-Create a file called docs/reference-cowsay-creatures.md listing my favorite cowsay creatures. Include at least 5 creatures from the -l list, with a brief description of each and an example command to use it.
+- The -f flag for choosing creatures
+- 2-3 other flags I tried
+- Examples with my favorite creature
 ```
 
 ### Add a custom script
@@ -362,7 +326,6 @@ Commit these files:
 
 - `package.json` (with your favorite script)
 - `docs/tutorial-cowsay.md`
-- `docs/reference-cowsay-creatures.md`
 
 **Remember the comma rule!** When adding your `favorite` script, add a comma after the `moo` line.
 
@@ -479,7 +442,7 @@ Read [ai-as-communication-tool.md](ai-as-communication-tool.md) if you haven't a
 Look at:
 
 - Your SpecStory history (`.specstory/history/`)—this folder contains your conversation logs. If you don't see it, that's okay; you can also scroll through your Copilot Chat panel history instead.
-- The 4 docs you created with Agent
+- The 2 tutorial docs you created with Agent
 - Your modified `copilot-instructions.md`
 - Your README
 
@@ -505,7 +468,7 @@ Submit to Canvas:
 1. **GitHub repository link** containing:
    - Working npm project with cowsay installed
    - Your custom scripts in package.json
-   - 4 student-created docs in docs/
+   - 2 student-created tutorial docs in docs/
    - Modified copilot-instructions.md
    - README with cowsay output in code fence
 
@@ -523,9 +486,7 @@ Use [CHECKLIST.md](CHECKLIST.md) to verify everything before submitting.
 | -------------------------------------- | ---------------------------------------- |
 | `package.json`                         | Agent (Part 1), then you edited (Part 3) |
 | `docs/tutorial-package-json.md`        | You with Agent (Part 2)                  |
-| `docs/reference-npm-commands.md`       | You with Agent (Part 3)                  |
 | `docs/tutorial-cowsay.md`              | You with Agent (Part 4)                  |
-| `docs/reference-cowsay-creatures.md`   | You with Agent (Part 4)                  |
 | `README.md`                            | You (Part 5)                             |
 | `.github/copilot-instructions.md`      | Modified by you (Part 6)                 |
 | `ai-collaboration-summary-template.md` | Filled out by you (Part 7)               |

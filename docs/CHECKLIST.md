@@ -24,9 +24,7 @@ Use this checklist to verify your work before submitting. Every item should be c
 You create these files with Agent's help during the assignment:
 
 - [ ] `docs/tutorial-package-json.md` — explains package.json fields
-- [ ] `docs/reference-npm-commands.md` — your npm command cheat sheet
 - [ ] `docs/tutorial-cowsay.md` — documents cowsay usage and flags
-- [ ] `docs/reference-cowsay-creatures.md` — lists your favorite creatures
 
 ## README
 
@@ -78,9 +76,8 @@ your-repo/
 │   └── copilot-instructions.md  (modified)
 ├── docs/
 │   ├── tutorial-package-json.md     (you created)
-│   ├── reference-npm-commands.md    (you created)
 │   ├── tutorial-cowsay.md           (you created)
-│   └── reference-cowsay-creatures.md (you created)
+│   └── (pre-made tutorials and reference docs)
 ├── node_modules/                    (auto-generated)
 ├── ai-collaboration-summary-template.md (filled out)
 ├── package.json                     (with your scripts)
