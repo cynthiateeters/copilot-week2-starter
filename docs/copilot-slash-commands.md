@@ -27,17 +27,18 @@ Slash commands are shortcuts that tell Copilot Chat exactly what kind of help yo
 
 **Example:**
 
-You select this code:
+You select this code that Agent created:
 
 ```javascript
-button.addEventListener("click", () => {
+button.addEventListener("click", function () {
+  console.log("Button was clicked!");
   alert("Hello!");
 });
 ```
 
 You type: `/explain`
 
-Copilot responds with a line-by-line breakdown of what the code does.
+Copilot responds with a line-by-line breakdown of what the code does. Even if Agent used syntax you don't recognize (like `() =>` instead of `function()`), `/explain` will help you understand it.
 
 **Pro tip:** Add context to get better explanations:
 
