@@ -93,17 +93,29 @@ Try these prompts with Agent:
 - Copy `ai-collaboration-summary-template.md` to a new file
 - Fill in the template, including your context modification experience
 
+## Important: Working with AI-generated code
+
+Agent mode will write HTML, CSS, and JavaScript for you. Before you dive in, read the guide in `docs/working-with-ai-generated-code.md`. It explains:
+
+- What "vibe coding" is and why it matters
+- The difference between using AI to learn vs. using AI to skip learning
+- What level of understanding we expect for JavaScript vs. HTML/CSS
+- How to use `/explain` effectively
+
+**Key expectation:** Use `/explain` on every piece of JavaScript Agent creates. Your AI collaboration summary must show you understand what the code does.
+
 ## Files in this repository
 
-| File                                   | Purpose                                  |
-| -------------------------------------- | ---------------------------------------- |
-| `index.html`                           | Your web page (Agent will modify this)   |
-| `styles.css`                           | Page styling (Agent may modify this)     |
-| `script.js`                            | JavaScript code (Agent will add to this) |
-| `.github/copilot-instructions.md`      | Copilot configuration (you will modify)  |
-| `.vscode/settings.json`                | Workspace settings                       |
-| `.vscode/extensions.json`              | Recommended extensions                   |
-| `ai-collaboration-summary-template.md` | Template for your reflection             |
+| File                                     | Purpose                                  |
+| ---------------------------------------- | ---------------------------------------- |
+| `index.html`                             | Your web page (Agent will modify this)   |
+| `styles.css`                             | Page styling (Agent may modify this)     |
+| `script.js`                              | JavaScript code (Agent will add to this) |
+| `.github/copilot-instructions.md`        | Copilot configuration (you will modify)  |
+| `.vscode/settings.json`                  | Workspace settings                       |
+| `.vscode/extensions.json`                | Recommended extensions                   |
+| `ai-collaboration-summary-template.md`   | Template for your reflection             |
+| `docs/working-with-ai-generated-code.md` | Guide to learning from AI-generated code |
 
 ## How to view your page
 
