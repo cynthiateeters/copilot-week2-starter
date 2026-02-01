@@ -62,7 +62,7 @@ Every item except the last needs a comma after it.
 ```json
 {
   "name": "my-project",
-  "version": "1.0.0"
+  "version": "1.0.0",
 }
 ```
 
