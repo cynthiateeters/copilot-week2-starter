@@ -117,6 +117,9 @@ Agent mode will write HTML, CSS, and JavaScript for you. Before you dive in, rea
 | `ai-collaboration-summary-template.md`   | Template for your reflection             |
 | `docs/working-with-ai-generated-code.md` | Guide to learning from AI-generated code |
 | `docs/copilot-slash-commands.md`         | Tutorial on /explain, /fix, and more     |
+| `docs/writing-prompts-for-agent.md`      | How to write effective prompts           |
+| `docs/when-agent-makes-mistakes.md`      | Handling errors and debugging with Agent |
+| `docs/understanding-agent-workflow.md`   | What happens when Agent processes a task |
 
 ## How to view your page
 
