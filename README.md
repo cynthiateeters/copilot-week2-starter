@@ -15,7 +15,6 @@ Welcome to Week 2! This assignment teaches you to use Copilot Agent for project 
 - Edit JSON files manually
 - Run npm scripts
 - Create documentation with Agent
-- Modify Copilot context
 
 ## Files in this repository
 
@@ -24,7 +23,7 @@ Welcome to Week 2! This assignment teaches you to use Copilot Agent for project 
 | [docs/INSTRUCTIONS.md](docs/INSTRUCTIONS.md)                                 | Complete assignment walkthrough |
 | docs/tutorial-\*.md                                                          | Background reading              |
 | docs/guide-\*.md                                                             | How-to guides                   |
-| [.github/copilot-instructions.md](.github/copilot-instructions.md)           | Copilot context file            |
+| docs/reference-\*.md                                                         | Quick reference docs            |
 | [ai-collaboration-summary-template.md](ai-collaboration-summary-template.md) | Reflection template             |
 
 ## Quick links

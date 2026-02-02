@@ -9,7 +9,6 @@ Use this checklist to verify your work before submitting. Every item should be c
 - [ ] `package.json` exists in root folder
 - [ ] `package-lock.json` exists (auto-generated)
 - [ ] `node_modules/` folder exists with cowsay installed
-- [ ] Your name and email appear in package.json
 
 ## npm scripts
 

@@ -20,15 +20,17 @@ _______
 
 ```
 
+> **Before you begin:** Following detailed, step-by-step instructions is a core developer skill. Technical documentation, setup guides, and onboarding procedures are part of every professional environment. Take your time and keep track of where you are. If something doesn't work as expected, first ask your AI agent for help—describe what you tried and what happened. If you're still stuck, reach out to your instructor.
+
 ## Overview
 
-This week you will use Copilot Agent to set up a real npm project, then experiment with cowsay—a fun command-line tool that makes ASCII art animals say things. Along the way, you'll create documentation files with Agent's help, learning how to turn AI assistance into lasting knowledge.
+This week you will use Copilot Agent to set up a real npm project, then experiment with cowsay—a fun command-line tool that makes ASCII art animals say things. Along the way, you'll create a documentation file with Agent's help, learning how to turn AI assistance into lasting knowledge.
 
 ## Learning objectives
 
 By completing this assignment, you will be able to:
 
-- Use Agent mode for project setup tasks (npm config, init, install)
+- Use Agent mode for project setup tasks (npm init, install)
 - Understand npm and package.json fundamentals
 - Edit JSON files manually
 - Run npm scripts from the terminal
@@ -83,26 +85,18 @@ Read [tutorial-npm-basics.md](tutorial-npm-basics.md) to understand what npm is 
 
 ### Give Agent your setup prompt
 
-Copy and paste this prompt, **replacing the placeholder text with your real name and email**:
+Copy and paste this prompt:
 
 ```text
-Configure npm with my author information:
-- Name: Your Name
-- Email: your.email@example.com
-- License: MIT
-
-Then initialize a new npm project and install cowsay.
+Initialize a new npm project and install cowsay.
 ```
 
 ### Watch Agent work
 
-Agent will run several commands:
+Agent will run two commands:
 
-1. `npm config set init-author-name "Your Name" -g`
-2. `npm config set init-author-email "your.email@example.com" -g`
-3. `npm config set init-license "MIT" -g`
-4. `npm init --yes`
-5. `npm install cowsay`
+1. `npm init --yes`
+2. `npm install cowsay`
 
 **Accept the changes** when Agent prompts you.
 
@@ -144,7 +138,7 @@ If you see "ERROR" in red, something actually went wrong—check the Troubleshoo
 3. Type `/explain What is each field in this file?`
 4. Read the explanation
 
-### Create your first doc: tutorial-package-json.md
+### Create a tutorial doc: tutorial-package-json.md
 
 Now you'll create a documentation file with Agent's help.
 
@@ -389,6 +383,10 @@ Open `ai-collaboration-summary-template.md` and fill it out. Be specific about:
 - What you had to adjust
 - What you learned about working with Agent
 - How creating docs helped you understand the material
+
+**Example response** (for the "Agent mode for setup" question):
+
+> Using Agent for npm setup was faster than typing commands myself because I didn't have to remember the exact syntax. Agent showed me what each command did as it ran them. The downside was that I initially accepted the changes without really reading what happened—I had to go back and look at my package.json to understand the result.
 
 ### Final CPR
 

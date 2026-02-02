@@ -60,4 +60,3 @@ This is your project's name. npm uses it to identify your project.
 
 - Focus on npm, package.json, and terminal commands for this assignment
 - Encourage the student to use /explain to understand terminal output
-- If the student modifies this file, acknowledge the change and follow their new instructions
