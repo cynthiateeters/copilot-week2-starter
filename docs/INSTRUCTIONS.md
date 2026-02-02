@@ -20,7 +20,7 @@ _______
 
 ```
 
-> **Before you begin:** Following detailed, step-by-step instructions is a core developer skill. Technical documentation, setup guides, and onboarding procedures are part of every professional environment. Take your time and keep track of where you are. If something doesn't work as expected, first ask your AI agent for help—describe what you tried and what happened. If you're still stuck, reach out to your instructor.
+> **Before you begin:** Following detailed, step-by-step instructions is a core developer skill. Technical documentation, setup guides, and onboarding procedures are part of every professional environment. Take your time and keep track of where you are. If something doesn't work as expected, first ask your AI agent for help—describe what you tried and what happened. If you're still stuck, reach out to your team and then your instructor.
 
 ## Overview
 
