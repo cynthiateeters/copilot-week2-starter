@@ -40,7 +40,7 @@ By completing this assignment, you will be able to:
 
 Software development is fundamentally about communication—with other humans, with your future self, and now with AI agents. This week focuses on tasks where AI excels: setup, documentation, and explanation. These all require translating between technical precision and human understanding.
 
-See [ai-as-communication-tool.md](ai-as-communication-tool.md) for why AI is particularly good at these tasks.
+See [ai-as-communication-tool.md](guides/ai-as-communication-tool.md) for why AI is particularly good at these tasks.
 
 ## Prerequisites
 
@@ -64,7 +64,7 @@ You should see a version number like `v20.11.0`. Any version starting with v18, 
 
 1. Open this folder in VS Code
 2. Open Copilot Chat (`Ctrl+Cmd+I` on Mac, `Ctrl+Alt+I` on Windows)
-3. Read [guide-agent-for-setup.md](guide-agent-for-setup.md) before your first prompt
+3. Read [agent-for-setup.md](guides/agent-for-setup.md) before your first prompt
 4. Review [CHECKLIST.md](CHECKLIST.md) to see what you'll submit
 
 ---
@@ -75,7 +75,7 @@ You should see a version number like `v20.11.0`. Any version starting with v18, 
 
 ### Before you start
 
-Read [tutorial-npm-basics.md](tutorial-npm-basics.md) to understand what npm is and why we use it.
+Read [npm-basics.md](tutorials/npm-basics.md) to understand what npm is and why we use it.
 
 ### Switch to Agent mode
 
@@ -179,9 +179,9 @@ Push to GitHub and review your repo on GitHub.com to make sure everything looks 
 
 ### Before you start
 
-Read [tutorial-npm-scripts.md](tutorial-npm-scripts.md) to understand how npm scripts work.
+Read [npm-scripts.md](tutorials/npm-scripts.md) to understand how npm scripts work.
 
-Also read [tutorial-json-syntax.md](tutorial-json-syntax.md) so you don't accidentally break your JSON.
+Also read [json-syntax.md](tutorials/json-syntax.md) so you don't accidentally break your JSON.
 
 ### Open package.json
 
@@ -237,7 +237,7 @@ Add these scripts:
 
 You should see a cow saying "Hello from npm scripts!"
 
-**Tip:** Need a quick reference for npm commands? Check out [reference-npm-commands.md](reference-npm-commands.md).
+**Tip:** Need a quick reference for npm commands? Check out [npm-commands.md](reference/npm-commands.md).
 
 ### CPR checkpoint
 
@@ -251,7 +251,7 @@ Commit `package.json` (with your new scripts) and push to GitHub.
 
 ### Reference doc available
 
-Check out [reference-cowsay-creatures.md](reference-cowsay-creatures.md) for a list of fun creatures and flags to try.
+Check out [cowsay-creatures.md](reference/cowsay-creatures.md) for a list of fun creatures and flags to try.
 
 ### Run cowsay with a message
 
@@ -365,7 +365,7 @@ Commit `README.md` and push. Check your repo on GitHub.com—the README should d
 
 ### Before you start
 
-Read [ai-as-communication-tool.md](ai-as-communication-tool.md) if you haven't already. It's short (5 minutes) and will help you answer the reflection questions.
+Read [ai-as-communication-tool.md](guides/ai-as-communication-tool.md) if you haven't already. It's short (5 minutes) and will help you answer the reflection questions.
 
 ### Review your work
 
@@ -423,15 +423,15 @@ Use [CHECKLIST.md](CHECKLIST.md) to verify everything before submitting.
 
 ### Troubleshooting
 
-| Problem                              | Solution                                                                                                                                                                                                                                                                   |
-| ------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `npm: command not found`             | Node.js isn't installed. Download from [nodejs.org](https://nodejs.org)                                                                                                                                                                                                    |
-| JSON syntax error                    | Look for red squiggly lines in VS Code. Common causes: missing comma, extra comma after last item, mismatched quotes. Try pasting your JSON into [jsonlint.com](https://jsonlint.com) to find the exact error. See also [tutorial-json-syntax.md](tutorial-json-syntax.md) |
-| Cowsay doesn't run                   | Make sure you're in the project folder. Run `npm install` again                                                                                                                                                                                                            |
-| npm can't find package.json          | You're in the wrong folder. Make sure your terminal is in the project folder (you should see package.json in the file explorer).                                                                                                                                           |
-| Agent won't create files             | Make sure you're in Agent mode, not Ask mode                                                                                                                                                                                                                               |
-| Push fails with authentication error | VS Code will prompt you to sign in to GitHub. Follow the prompts. If that doesn't work, ask your instructor for help with git credentials.                                                                                                                                 |
-| Cowsay hangs after running           | You may have forgotten the `--` before your flags/message. Press Ctrl+C to cancel, then try again with `npm run cowsay -- "your message"`                                                                                                                                  |
+| Problem                              | Solution                                                                                                                                                                                                                                                           |
+| ------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `npm: command not found`             | Node.js isn't installed. Download from [nodejs.org](https://nodejs.org)                                                                                                                                                                                            |
+| JSON syntax error                    | Look for red squiggly lines in VS Code. Common causes: missing comma, extra comma after last item, mismatched quotes. Try pasting your JSON into [jsonlint.com](https://jsonlint.com) to find the exact error. See also [json-syntax.md](tutorials/json-syntax.md) |
+| Cowsay doesn't run                   | Make sure you're in the project folder. Run `npm install` again                                                                                                                                                                                                    |
+| npm can't find package.json          | You're in the wrong folder. Make sure your terminal is in the project folder (you should see package.json in the file explorer).                                                                                                                                   |
+| Agent won't create files             | Make sure you're in Agent mode, not Ask mode                                                                                                                                                                                                                       |
+| Push fails with authentication error | VS Code will prompt you to sign in to GitHub. Follow the prompts. If that doesn't work, ask your instructor for help with git credentials.                                                                                                                         |
+| Cowsay hangs after running           | You may have forgotten the `--` before your flags/message. Press Ctrl+C to cancel, then try again with `npm run cowsay -- "your message"`                                                                                                                          |
 
 ---
 

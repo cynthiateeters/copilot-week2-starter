@@ -76,7 +76,7 @@ Common causes:
 - Extra comma after the last property
 - Mismatched quotes
 
-See [tutorial-json-syntax.md](tutorial-json-syntax.md) for help fixing JSON errors.
+See [json-syntax.md](../tutorials/json-syntax.md) for help fixing JSON errors.
 
 ### You don't understand what Agent did
 

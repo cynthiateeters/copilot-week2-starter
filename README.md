@@ -18,17 +18,17 @@ Welcome to Week 2! This assignment teaches you to use Copilot Agent for project 
 
 ## Files in this repository
 
-| File                                                                         | Purpose                         |
+| File/Folder                                                                  | Purpose                         |
 | ---------------------------------------------------------------------------- | ------------------------------- |
 | [docs/INSTRUCTIONS.md](docs/INSTRUCTIONS.md)                                 | Complete assignment walkthrough |
-| docs/tutorial-\*.md                                                          | Background reading              |
-| docs/guide-\*.md                                                             | How-to guides                   |
-| docs/reference-\*.md                                                         | Quick reference docs            |
+| [docs/tutorials/](docs/tutorials/)                                           | Background reading              |
+| [docs/guides/](docs/guides/)                                                 | How-to guides                   |
+| [docs/reference/](docs/reference/)                                           | Quick reference docs            |
 | [ai-collaboration-summary-template.md](ai-collaboration-summary-template.md) | Reflection template             |
 
 ## Quick links
 
 - [Full instructions](docs/INSTRUCTIONS.md)
-- [npm basics tutorial](docs/tutorial-npm-basics.md)
-- [JSON syntax guide](docs/tutorial-json-syntax.md)
-- [Using Agent for setup](docs/guide-agent-for-setup.md)
+- [npm basics tutorial](docs/tutorials/npm-basics.md)
+- [JSON syntax guide](docs/tutorials/json-syntax.md)
+- [Using Agent for setup](docs/guides/agent-for-setup.md)

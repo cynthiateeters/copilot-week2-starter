@@ -103,7 +103,7 @@ To add a new script:
 1. Open `package.json`
 2. Find the `scripts` section
 3. Add a new line with your script name and command
-4. **Remember the comma** on the line before (see [tutorial-json-syntax.md](tutorial-json-syntax.md))
+4. **Remember the comma** on the line before (see [json-syntax.md](json-syntax.md))
 
 ### Example: Adding a cowsay script
 
